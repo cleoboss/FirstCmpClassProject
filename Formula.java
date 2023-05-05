@@ -14,5 +14,9 @@ public class Formula extends Physics{
     float kineticEnergy(float mass, float velocity){
         return divide(1,2) * multiply(mass, powTwo(velocity));
     }
-
+    
+    float gravitationalForce(float mass, float gravity){
+        return multiply(mass, gravity)
+    }
+    
 }
